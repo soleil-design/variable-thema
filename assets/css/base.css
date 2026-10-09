@@ -1,0 +1,45 @@
+/*
+ * Base layer:
+ * Design tokens, reset-level rules, and unclassed HTML defaults.
+ * Keep component, layout, block, and page-specific selectors out of this file.
+ */
+
+:root {
+	--vt-color-text: #1f2933;
+	--vt-color-muted: #667085;
+	--vt-color-border: #e4e7ec;
+	--vt-color-bg: #ffffff;
+	--vt-color-surface: #f8fafc;
+	--vt-color-main: #1f2933;
+	--vt-color-accent: #0f766e;
+	--vt-color-button: #1f2933;
+	--vt-content-width: 960px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--vt-color-bg);
+	color: var(--vt-color-text);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	line-height: 1.7;
+}
+
+a {
+	color: inherit;
+	text-decoration-thickness: 0.08em;
+	text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+	color: var(--vt-color-accent);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

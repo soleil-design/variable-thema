@@ -1,0 +1,6 @@
+/*
+ * Intentionally not enqueued.
+ * Runtime styles are split into base.css, layout.css, components.css,
+ * blocks.css, and pages.css. The root theme style.css remains the WordPress
+ * theme header file.
+ */

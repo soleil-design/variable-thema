@@ -1,0 +1,1796 @@
+# Copyright (C) 2026 Soleil
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Variable Thema 0.9.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/variable-thema\n"
+"POT-Creation-Date: 2026-10-09T04:15:29+00:00\n"
+"PO-Revision-Date: 2026-10-08T06:35:57+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: variable-thema\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Variable Thema"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid ""
+"A flexible classic WordPress theme with reusable presentation components and "
+"extension points for site-specific functionality."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Soleil"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://soleil-design.com/"
+msgstr ""
+
+#: 404.php:21
+msgid "The page you are looking for could not be found."
+msgstr "お探しのページは見つかりませんでした。"
+
+#: 404.php:22
+msgid "Return to home"
+msgstr "ホームへ戻る"
+
+#: archive-faq.php:67
+msgctxt "FAQ archive section"
+msgid "Other"
+msgstr "その他"
+
+#: archive-service.php:92
+msgid ""
+"Browse services organized by goals and challenges, with the information you "
+"need easy to find."
+msgstr "サービスの内容を、目的や課題ごとに見やすく整理しています。必要な項目だけを確認しやすい構成です。"
+
+#: archive-service.php:100
+msgid "Service"
+msgstr "サービス"
+
+#: archive-service.php:101 functions.php:40 template-parts/breadcrumb.php:25
+msgid "Services"
+msgstr "サービス"
+
+#: archive-service.php:108 single-service.php:78
+msgid "Featured service"
+msgstr "注目サービス"
+
+#: archive-service.php:120
+msgid "All services"
+msgstr "サービス一覧"
+
+#: archive-service.php:195
+msgctxt "service archive section"
+msgid "Other"
+msgstr "その他"
+
+#. translators: %s: Post title.
+#: comments.php:18
+#, php-format
+msgid "Comments on “%s”"
+msgstr "「%s」へのコメント"
+
+#: comments.php:39
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: functions.php:36 inc/block-patterns.php:83 inc/block-patterns.php:276
+#: single-service.php:192 template-parts/faq-list.php:20
+msgid "Frequently Asked Questions"
+msgstr "よくある質問"
+
+#: header.php:21
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
+#: inc/admin-guide.php:20
+msgid "variable Thema Guide"
+msgstr ""
+
+#: inc/admin-guide.php:21
+msgid "variable Thema"
+msgstr ""
+
+#: inc/admin-guide.php:38
+msgid "OK"
+msgstr ""
+
+#: inc/admin-guide.php:41 inc/admin-guide.php:147 inc/admin-guide.php:154
+#: inc/admin-guide.php:293 inc/admin-guide.php:297 inc/admin-guide.php:409
+msgid "Not set"
+msgstr "未設定"
+
+#: inc/admin-guide.php:89
+msgid "Latest posts"
+msgstr ""
+
+#: inc/admin-guide.php:90
+msgid "Not selected"
+msgstr ""
+
+#: inc/admin-guide.php:102
+msgid "Optional feature / Not implemented"
+msgstr "オプション機能 / 未実装"
+
+#: inc/admin-guide.php:103
+msgid ""
+"Only a detection extension point is provided for data-vt-postcode markup in "
+"post content."
+msgstr "本文内に data-vt-postcode がある場合に検出する受け口だけ用意済みです。"
+
+#: inc/admin-guide.php:115
+msgid "Deprecated"
+msgstr "非推奨"
+
+#: inc/admin-guide.php:116
+msgid ""
+"The theme does not provide tracking, storage, or an administration screen."
+msgstr "テーマは計測、保存、管理画面を提供しません。"
+
+#: inc/admin-guide.php:117
+msgid "Use a dedicated plugin if this functionality is required."
+msgstr "必要な場合は専用プラグインを使用してください。"
+
+#: inc/admin-guide.php:145 inc/admin-guide.php:405
+msgid "Logo configured"
+msgstr "ロゴ設定済み"
+
+#: inc/admin-guide.php:147 inc/admin-guide.php:154 inc/admin-guide.php:293
+#: inc/admin-guide.php:297 inc/admin-guide.php:409
+msgid "Configured"
+msgstr "設定済み"
+
+#: inc/admin-guide.php:149
+msgid "Go to logo settings"
+msgstr "ロゴ設定へ"
+
+#: inc/admin-guide.php:152
+msgid "Site icon configured"
+msgstr "サイトアイコン設定済み"
+
+#: inc/admin-guide.php:156
+msgid "Go to Site Identity"
+msgstr "サイト基本情報へ"
+
+#: inc/admin-guide.php:159
+msgid "Primary Menu assigned"
+msgstr "Primary Menu割り当て済み"
+
+#: inc/admin-guide.php:161 inc/admin-guide.php:168 inc/admin-guide.php:325
+#: inc/admin-guide.php:329
+msgid "Assigned"
+msgstr "割り当て済み"
+
+#: inc/admin-guide.php:161 inc/admin-guide.php:168 inc/admin-guide.php:325
+#: inc/admin-guide.php:329
+msgid "Not assigned"
+msgstr "未割り当て"
+
+#: inc/admin-guide.php:163 inc/admin-guide.php:170
+msgid "Go to menu settings"
+msgstr "メニュー設定へ"
+
+#: inc/admin-guide.php:166
+msgid "Footer Menu assigned"
+msgstr "Footer Menu割り当て済み"
+
+#: inc/admin-guide.php:173
+msgid "Front page configured"
+msgstr "トップページ設定済み"
+
+#: inc/admin-guide.php:177 inc/admin-guide.php:184
+msgid "Go to Reading Settings"
+msgstr "表示設定へ"
+
+#: inc/admin-guide.php:180
+msgid "Posts page configured"
+msgstr "投稿ページ設定済み"
+
+#: inc/admin-guide.php:187
+msgid "Permalink structure is not Plain"
+msgstr "パーマリンクが基本以外"
+
+#: inc/admin-guide.php:189
+msgid "Plain"
+msgstr "基本"
+
+#: inc/admin-guide.php:191
+msgid "Go to Permalink Settings"
+msgstr "パーマリンク設定へ"
+
+#: inc/admin-guide.php:194
+msgid "Site title display setting"
+msgstr "サイトタイトル表示設定"
+
+#: inc/admin-guide.php:196 inc/admin-guide.php:203 inc/admin-guide.php:210
+#: inc/admin-guide.php:313 inc/admin-guide.php:317 inc/admin-guide.php:321
+msgid "Show"
+msgstr "表示"
+
+#: inc/admin-guide.php:196 inc/admin-guide.php:203 inc/admin-guide.php:210
+#: inc/admin-guide.php:313 inc/admin-guide.php:317 inc/admin-guide.php:321
+msgid "Hide"
+msgstr "非表示"
+
+#: inc/admin-guide.php:198 inc/admin-guide.php:205 inc/admin-guide.php:212
+msgid "Go to theme settings"
+msgstr "テーマ設定へ"
+
+#: inc/admin-guide.php:201
+msgid "Header menu display setting"
+msgstr "ヘッダーメニュー表示設定"
+
+#: inc/admin-guide.php:208
+msgid "Footer menu display setting"
+msgstr "フッターメニュー表示設定"
+
+#: inc/admin-guide.php:257
+msgid ""
+"This guide summarizes the initial setup and checks for Variable Thema. It "
+"provides guidance only and does not change site settings."
+msgstr "variable Thema の初期設定と確認項目をまとめた案内ページです。このページは案内表示のみで、サイト設定は変更しません。"
+
+#: inc/admin-guide.php:261
+msgid "Customization shortcuts"
+msgstr "カスタマイズ導線"
+
+#: inc/admin-guide.php:264 inc/admin-guide.php:415
+msgid "Open theme settings"
+msgstr "テーマ設定を開く"
+
+#: inc/admin-guide.php:267
+msgid "Open header settings"
+msgstr "ヘッダー設定を開く"
+
+#: inc/admin-guide.php:270
+msgid "Open footer settings"
+msgstr "フッター設定を開く"
+
+#: inc/admin-guide.php:273
+msgid "Open logo and site icon settings"
+msgstr "ロゴ・サイトアイコン設定を開く"
+
+#: inc/admin-guide.php:276
+msgid "Open menu customization"
+msgstr "メニューのカスタマイズを開く"
+
+#: inc/admin-guide.php:279
+msgid "Open Parts"
+msgstr "パーツ一覧を開く"
+
+#: inc/admin-guide.php:283
+msgid ""
+"The logo and site icon use standard WordPress settings. Colors and display "
+"options are managed in Variable Thema Settings."
+msgstr "ロゴとサイトアイコンは WordPress 標準設定を使用します。色と表示切り替えは Variable Thema Settings で管理します。"
+
+#: inc/admin-guide.php:288
+msgid "Current theme settings"
+msgstr "現在のテーマ設定状態"
+
+#: inc/admin-guide.php:292
+msgid "Logo"
+msgstr "ロゴ"
+
+#: inc/admin-guide.php:296
+msgid "Site icon"
+msgstr "サイトアイコン"
+
+#: inc/admin-guide.php:300 inc/customizer.php:101
+msgid "Main color"
+msgstr "メインカラー"
+
+#: inc/admin-guide.php:304 inc/customizer.php:102
+msgid "Accent color"
+msgstr "アクセントカラー"
+
+#: inc/admin-guide.php:308 inc/customizer.php:103
+msgid "Button color"
+msgstr "ボタン色"
+
+#: inc/admin-guide.php:312 inc/customizer.php:132
+msgid "Show site title"
+msgstr "サイトタイトル表示"
+
+#: inc/admin-guide.php:316 inc/customizer.php:136
+msgid "Show header menu"
+msgstr "ヘッダーメニュー表示"
+
+#: inc/admin-guide.php:320 inc/customizer.php:140
+msgid "Show footer menu"
+msgstr "フッターメニュー表示"
+
+#: inc/admin-guide.php:324 inc/setup.php:40 template-parts/site-header.php:50
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/admin-guide.php:328 inc/setup.php:41 template-parts/site-footer.php:180
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/admin-guide.php:332 inc/block-patterns.php:186
+msgid "Front page"
+msgstr "トップページ"
+
+#: inc/admin-guide.php:336
+msgid "Posts page"
+msgstr "投稿ページ"
+
+#: inc/admin-guide.php:344
+msgid "Initial setup checklist"
+msgstr "初期設定チェックリスト"
+
+#. translators: 1: completed count, 2: total count.
+#: inc/admin-guide.php:349
+#, php-format
+msgid "Progress: %1$d / %2$d"
+msgstr "進捗: %1$d / %2$d"
+
+#: inc/admin-guide.php:358 inc/admin-parts.php:87
+msgid "Status"
+msgstr "状態"
+
+#: inc/admin-guide.php:359
+msgid "Item"
+msgstr "項目"
+
+#: inc/admin-guide.php:360
+msgid "Current value"
+msgstr "現在値"
+
+#: inc/admin-guide.php:361
+msgid "Settings location"
+msgstr "設定場所"
+
+#: inc/admin-guide.php:382
+msgid "Settings shortcuts"
+msgstr "設定への案内"
+
+#: inc/admin-guide.php:385
+msgid "Open menu settings"
+msgstr "メニュー設定を開く"
+
+#: inc/admin-guide.php:388
+msgid "Open Reading Settings"
+msgstr "表示設定を開く"
+
+#: inc/admin-guide.php:391
+msgid "Open Pages"
+msgstr "固定ページ一覧を開く"
+
+#: inc/admin-guide.php:395
+msgid ""
+"Reading Settings controls whether the front page shows the latest posts or a "
+"static page."
+msgstr "表示設定では、トップページに最新投稿を表示するか、固定ページを表示するかを設定できます。"
+
+#: inc/admin-guide.php:400
+msgid "Footer display settings"
+msgstr "フッター表示設定"
+
+#: inc/admin-guide.php:404
+msgid "Footer logo"
+msgstr "フッターロゴ"
+
+#: inc/admin-guide.php:405
+msgid "Logo not set"
+msgstr "ロゴ未設定"
+
+#: inc/admin-guide.php:408
+msgid "Copyright note"
+msgstr "コピーライト補足"
+
+#: inc/admin-guide.php:421
+msgid "Recommended checks"
+msgstr "推奨確認項目"
+
+#: inc/admin-guide.php:423
+msgid "Header: site title, Primary Menu, and mobile display."
+msgstr "ヘッダー: サイトタイトル、Primary Menu、モバイル表示。"
+
+#: inc/admin-guide.php:424
+msgid "Footer: Footer Menu, footer logo, and copyright."
+msgstr "フッター: Footer Menu、フッターロゴ、コピーライト。"
+
+#: inc/admin-guide.php:425
+msgid "Pages: page title, content width, featured image, and breadcrumb."
+msgstr "固定ページ: ページタイトル、本文幅、アイキャッチ、パンくず。"
+
+#: inc/admin-guide.php:426
+msgid ""
+"Single posts: title, date, categories, featured image, and post navigation."
+msgstr "投稿詳細: タイトル、投稿日、カテゴリ、アイキャッチ、前後投稿ナビ。"
+
+#: inc/admin-guide.php:427
+msgid "Post archive: post cards, pagination, and empty results."
+msgstr "投稿一覧: 投稿カード、ページネーション、記事なし表示。"
+
+#: inc/admin-parts.php:20 inc/block-patterns.php:179
+msgid "variable Thema Parts"
+msgstr ""
+
+#: inc/admin-parts.php:21
+msgid "Parts"
+msgstr "パーツ一覧"
+
+#: inc/admin-parts.php:51
+msgid "Not registered"
+msgstr "未登録"
+
+#: inc/admin-parts.php:55
+msgid "Standard part"
+msgstr "標準パーツ"
+
+#: inc/admin-parts.php:59
+msgid "Enabled"
+msgstr "有効"
+
+#: inc/admin-parts.php:60
+msgid "Disabled"
+msgstr "無効"
+
+#: inc/admin-parts.php:77
+msgid "Variable Thema Parts"
+msgstr "variable Thema パーツ一覧"
+
+#: inc/admin-parts.php:79
+msgid ""
+"This is a list of theme UI components. Stored legacy gateway values remain "
+"for compatibility, but settings that are not connected to runtime features "
+"are no longer saved."
+msgstr "テーマ内UI部品の一覧です。旧Gatewayの保存値は互換性のため保持されますが、実行機能へ接続されていない設定の新規保存は停止しました。"
+
+#: inc/admin-parts.php:85
+msgid "Part"
+msgstr "パーツ"
+
+#: inc/admin-parts.php:86
+msgid "Type"
+msgstr "分類"
+
+#: inc/admin-parts.php:88
+msgid "Activation"
+msgstr ""
+
+#: inc/admin-parts.php:89
+msgid "Summary"
+msgstr "概要"
+
+#: inc/admin-parts.php:90
+msgid "Related files / Usage"
+msgstr "関連ファイル / 使い方"
+
+#: inc/admin-parts.php:91
+msgid "Notes"
+msgstr "備考"
+
+#: inc/admin-parts.php:109
+msgid "Template:"
+msgstr ""
+
+#: inc/admin-parts.php:112
+msgid "CSS:"
+msgstr ""
+
+#: inc/admin-parts.php:115
+msgid "JS:"
+msgstr ""
+
+#: inc/admin-parts.php:117
+msgid "Usage:"
+msgstr ""
+
+#: inc/admin-parts.php:119
+msgid "Future toggle:"
+msgstr ""
+
+#: inc/admin-parts.php:144
+msgid "variable Thema Parts Settings"
+msgstr ""
+
+#: inc/admin-parts.php:146
+msgid ""
+"This settings screen is deprecated. Existing option values remain readable "
+"for compatibility, but new values are not saved."
+msgstr "この設定画面は非推奨です。既存optionは削除せず読取互換を維持していますが、新規保存は行いません。"
+
+#: inc/admin-parts.php:148
+msgid "Return to Parts"
+msgstr "パーツ一覧へ戻る"
+
+#: inc/block-patterns.php:21
+msgid "Recommended"
+msgstr "おすすめ"
+
+#: inc/block-patterns.php:22
+msgid "Turn your message into a design people understand."
+msgstr "伝えたい価値を、デザインで伝わる力に。"
+
+#: inc/block-patterns.php:23
+msgid ""
+"We provide website, design, and ongoing support tailored to your business."
+msgstr "Webサイト・デザイン制作・運用支援まで、事業に合わせたご提案を行います。"
+
+#: inc/block-patterns.php:24
+msgid "Contact us"
+msgstr "お問い合わせはこちら"
+
+#: inc/block-patterns.php:25 single-service.php:240
+#: template-parts/service-card.php:18 template-parts/service-card.php:27
+msgid "Learn more"
+msgstr "詳しく見る"
+
+#: inc/block-patterns.php:26
+msgid "Why choose us"
+msgstr "選ばれる理由"
+
+#: inc/block-patterns.php:27
+msgid ""
+"Summarize the strengths you want customers to understand in a clear, concise "
+"way."
+msgstr "お客様に伝えたい強みを、短くわかりやすくまとめます。"
+
+#: inc/block-patterns.php:28
+msgid "Thoughtful discovery"
+msgstr "丁寧なヒアリング"
+
+#: inc/block-patterns.php:29
+msgid ""
+"Clarify goals and challenges, then review the required content together."
+msgstr "目的や課題を整理し、必要な内容を一緒に確認します。"
+
+#: inc/block-patterns.php:30
+msgid "Easy-to-manage design"
+msgstr "運用しやすい設計"
+
+#: inc/block-patterns.php:31
+msgid "Use a structure that remains easy to review and update after launch."
+msgstr "公開後も見直しや更新がしやすい構成で整えます。"
+
+#: inc/block-patterns.php:32
+msgid "Ongoing support"
+msgstr "継続的なサポート"
+
+#: inc/block-patterns.php:33
+msgid "Get support for consultations and updates after launch when needed."
+msgstr "公開後の相談や更新にも、必要に応じて対応します。"
+
+#: inc/block-patterns.php:34 inc/block-patterns.php:226
+msgid "Testimonials"
+msgstr "お客様の声"
+
+#: inc/block-patterns.php:35
+msgid ""
+"Share outcomes and the reasons customers felt confident working with you."
+msgstr "導入前後の変化や、安心して依頼できた理由を掲載します。"
+
+#: inc/block-patterns.php:36
+msgid "The thoughtful support made the entire process feel reliable."
+msgstr "丁寧に対応していただき、安心して依頼できました。"
+
+#: inc/block-patterns.php:37
+msgid "Mr. Taro Yamada"
+msgstr "山田 太郎 様"
+
+#: inc/block-patterns.php:38
+msgid "Example Company"
+msgstr "株式会社サンプル"
+
+#: inc/block-patterns.php:39
+msgid "Post-launch updates have been smooth and easy to manage."
+msgstr "公開後の修正もスムーズで、運用しやすさを実感しています。"
+
+#: inc/block-patterns.php:40
+msgid "Hanako Sato"
+msgstr "佐藤 花子 様"
+
+#: inc/block-patterns.php:41
+msgid "Business owner"
+msgstr "事業主"
+
+#: inc/block-patterns.php:42
+msgid "The information is well organized, making the site easy to understand."
+msgstr "必要な情報が整理されていて、見やすいサイトになりました。"
+
+#: inc/block-patterns.php:43
+msgid "Ichiro Suzuki"
+msgstr "鈴木 一郎 様"
+
+#: inc/block-patterns.php:44
+msgid "Project manager"
+msgstr "プロジェクト担当"
+
+#: inc/block-patterns.php:45 inc/block-patterns.php:216
+msgid "How it works"
+msgstr "ご利用の流れ"
+
+#: inc/block-patterns.php:46
+msgid "Clearly present each step from the initial inquiry through publication."
+msgstr "お問い合わせから公開までの流れを、順番にわかりやすく示します。"
+
+#: inc/block-patterns.php:47
+msgid "STEP 01"
+msgstr ""
+
+#: inc/block-patterns.php:48 inc/block-patterns.php:286
+msgid "Contact"
+msgstr "お問い合わせ"
+
+#: inc/block-patterns.php:49
+msgid "Tell us about your needs and current situation."
+msgstr "ご相談内容や現在の状況をお知らせください。"
+
+#: inc/block-patterns.php:50
+msgid "STEP 02"
+msgstr ""
+
+#: inc/block-patterns.php:51
+msgid "Discovery"
+msgstr "ヒアリング"
+
+#: inc/block-patterns.php:52
+msgid "Review the goals and organize the required content."
+msgstr "目的や必要な内容を整理しながら確認します。"
+
+#: inc/block-patterns.php:53
+msgid "STEP 03"
+msgstr ""
+
+#: inc/block-patterns.php:54
+msgid "Proposal"
+msgstr "ご提案"
+
+#: inc/block-patterns.php:55
+msgid "Review the proposed structure and process, then decide on a direction."
+msgstr "構成や進め方をご提案し、方向性を決めます。"
+
+#: inc/block-patterns.php:56
+msgid "STEP 04"
+msgstr ""
+
+#: inc/block-patterns.php:57
+msgid "Production and publication"
+msgstr "制作・公開"
+
+#: inc/block-patterns.php:58
+msgid "Prepare the content and proceed through publication."
+msgstr "内容を整え、公開まで進めます。"
+
+#: inc/block-patterns.php:59 inc/block-patterns.php:236
+msgid "Profile"
+msgstr "プロフィール"
+
+#: inc/block-patterns.php:60
+msgid "Introduce the people, values, and ideas behind the organization."
+msgstr "代表やスタッフの人柄や考え方を伝えます。"
+
+#: inc/block-patterns.php:61
+msgid "Taro Yamada"
+msgstr "山田 太郎"
+
+#: inc/block-patterns.php:62
+msgid "Founder and web director"
+msgstr "代表・Webディレクター"
+
+#: inc/block-patterns.php:63
+msgid ""
+"We prioritize solving customer challenges through website production and "
+"ongoing support."
+msgstr "お客様の課題解決を第一に考え、Web制作と運用支援を行っています。"
+
+#: inc/block-patterns.php:64 inc/block-patterns.php:246
+msgid "Pricing plans"
+msgstr "料金プラン"
+
+#: inc/block-patterns.php:65
+msgid "Present three plans in a clear, easy-to-compare layout."
+msgstr "比較しやすい3つのプランをわかりやすく並べます。"
+
+#: inc/block-patterns.php:66
+msgid "Starter"
+msgstr "スターター"
+
+#: inc/block-patterns.php:67
+msgid "Standard plan"
+msgstr "スタンダードプラン"
+
+#: inc/block-patterns.php:68
+msgid "¥50,000"
+msgstr ""
+
+#: inc/block-patterns.php:69
+msgid "A practical starter plan for small pages and introductory projects."
+msgstr "小規模なページや導入用に使いやすい基本プランです。"
+
+#: inc/block-patterns.php:70
+msgid "Planning consultation"
+msgstr "企画相談"
+
+#: inc/block-patterns.php:71
+msgid "Design production"
+msgstr "デザイン制作"
+
+#: inc/block-patterns.php:72
+msgid "Balanced plan"
+msgstr "バランスプラン"
+
+#: inc/block-patterns.php:73
+msgid "¥120,000"
+msgstr ""
+
+#: inc/block-patterns.php:74
+msgid "A balanced plan for practical scope and smooth delivery."
+msgstr "内容と進めやすさのバランスを重視したプランです。"
+
+#: inc/block-patterns.php:75
+msgid "Page structure planning"
+msgstr "ページ構成の整理"
+
+#: inc/block-patterns.php:76
+msgid "Pre-launch adjustments"
+msgstr "公開前の調整"
+
+#: inc/block-patterns.php:77
+msgid "Custom"
+msgstr "カスタム"
+
+#: inc/block-patterns.php:78
+msgid "Custom plan"
+msgstr "カスタムプラン"
+
+#: inc/block-patterns.php:79
+msgid "Contact us for details"
+msgstr "ご相談ください"
+
+#: inc/block-patterns.php:80
+msgid "A flexible plan tailored to your requirements."
+msgstr "要件に合わせて柔軟に組み立てるプランです。"
+
+#: inc/block-patterns.php:81
+msgid "Custom planning"
+msgstr "個別設計"
+
+#: inc/block-patterns.php:82
+msgid "Ongoing maintenance support"
+msgstr "運用継続の支援"
+
+#: inc/block-patterns.php:84
+msgid "Can I edit this later?"
+msgstr "あとから編集できますか？"
+
+#: inc/block-patterns.php:85
+msgid "Yes. Each section can be edited with standard Gutenberg blocks."
+msgstr "はい。各セクションは標準のGutenbergブロックで編集できます。"
+
+#: inc/block-patterns.php:86
+msgid "Can I remove sections?"
+msgstr "セクションは削除できますか？"
+
+#: inc/block-patterns.php:87
+msgid "Yes. Sections can be removed, duplicated, and reordered."
+msgstr "はい。削除・複製・並び替えができます。"
+
+#: inc/block-patterns.php:88
+msgid "Can I add FAQ items?"
+msgstr "FAQ項目は追加できますか？"
+
+#: inc/block-patterns.php:89
+msgid "Yes. Duplicate the FAQ item group to add as many items as needed."
+msgstr "はい。FAQ項目のグループを複製して、必要な数に調整できます。"
+
+#: inc/block-patterns.php:90
+msgid "Start a conversation"
+msgstr "ご相談はこちら"
+
+#: inc/block-patterns.php:91
+msgid "Ready to discuss your project?"
+msgstr "ご相談の準備はできていますか？"
+
+#: inc/block-patterns.php:92
+msgid "Add a short message that encourages the next action."
+msgstr "次の行動につながる短いメッセージを入れてください。"
+
+#: inc/block-patterns.php:93 inc/block-patterns.php:256
+msgid "Company profile"
+msgstr "会社概要"
+
+#: inc/block-patterns.php:94
+msgid "Present essential company or store information in a clear layout."
+msgstr "会社や店舗の基本情報を、見やすい形で掲載できます。"
+
+#: inc/block-patterns.php:95
+msgid "Company name"
+msgstr "会社名"
+
+#: inc/block-patterns.php:96
+msgid "Address"
+msgstr "所在地"
+
+#: inc/block-patterns.php:97
+msgid "Example City, Example Prefecture"
+msgstr "東京都〇〇区〇〇"
+
+#: inc/block-patterns.php:98
+msgid "Phone"
+msgstr "電話番号"
+
+#: inc/block-patterns.php:99
+msgid "03-0000-0000"
+msgstr ""
+
+#: inc/block-patterns.php:100
+msgid "Business hours"
+msgstr "営業時間"
+
+#: inc/block-patterns.php:101
+msgid "Weekdays, 9:00–18:00"
+msgstr "平日 9:00〜18:00"
+
+#: inc/block-patterns.php:102
+msgid "Business activities"
+msgstr "事業内容"
+
+#: inc/block-patterns.php:103
+msgid "Website production, design, and ongoing support"
+msgstr "Web制作・デザイン制作・運用支援"
+
+#: inc/block-patterns.php:104
+msgid "Please contact us before visiting."
+msgstr "ご来社の際は事前にお問い合わせください。"
+
+#: inc/block-patterns.php:105
+msgid "Website preview image"
+msgstr "ホームページのイメージ画像"
+
+#: inc/block-patterns.php:106
+msgid "Customer photo placeholder"
+msgstr "お客様の写真のプレースホルダー"
+
+#: inc/block-patterns.php:107
+msgid "Profile photo placeholder"
+msgstr "プロフィール写真のプレースホルダー"
+
+#: inc/block-patterns.php:108
+msgid "FAQ Section"
+msgstr ""
+
+#: inc/block-patterns.php:109
+msgid "FAQ List"
+msgstr ""
+
+#: inc/block-patterns.php:110
+msgid "FAQ Item"
+msgstr ""
+
+#: inc/block-patterns.php:111
+msgid "Question"
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "Answer"
+msgstr ""
+
+#: inc/block-patterns.php:113
+msgid "Hero image placeholder"
+msgstr "ヒーロー画像のプレースホルダー"
+
+#: inc/block-patterns.php:114
+msgid "The testimonials are organized clearly and are easy to present."
+msgstr "実際の声を整理して並べられ、わかりやすく掲載できました。"
+
+#: inc/block-patterns.php:115
+msgid "Choose from three plans for different needs and project sizes."
+msgstr "内容や規模に合わせて選べる、3つのプランを紹介します。"
+
+#: inc/block-patterns.php:116
+msgid "Publication support"
+msgstr "公開サポート"
+
+#: inc/block-patterns.php:117
+msgid "Mobile compatibility check"
+msgstr "スマホ対応確認"
+
+#: inc/block-patterns.php:118
+msgid "Custom section planning"
+msgstr "カスタム section planning"
+
+#: inc/block-patterns.php:119
+msgid "Additional requirements consultation"
+msgstr "追加要件の相談"
+
+#: inc/block-patterns.php:120
+msgid ""
+"Please contact us before visiting. Online consultations are also available."
+msgstr "ご来社前のご連絡や、オンライン相談も受け付けています。"
+
+#: inc/block-patterns.php:121 inc/block-patterns.php:266
+msgid "View related page"
+msgstr "関連ページを見る"
+
+#: inc/block-patterns.php:122 inc/block-patterns.php:267
+msgid "View this page for more information."
+msgstr "詳しい情報はこちらをご覧ください。"
+
+#: inc/block-patterns.php:123
+msgid "Enter a site name or URL"
+msgstr "サイト名やURLを入力"
+
+#: inc/block-patterns.php:124
+msgid "Link preview placeholder"
+msgstr "リンクプレビューのプレースホルダー"
+
+#: inc/block-patterns.php:125
+msgid "Can I contact you for an initial consultation?"
+msgstr "相談だけでも可能ですか？"
+
+#: inc/block-patterns.php:126
+msgid "Yes. Please feel free to contact us."
+msgstr "はい、お気軽にご相談ください。"
+
+#: inc/block-patterns.php:127
+msgid "Can you help with updates after launch?"
+msgstr "制作後の更新もお願いできますか？"
+
+#: inc/block-patterns.php:128
+msgid "Yes. Ongoing updates and maintenance support are available."
+msgstr "はい。必要に応じて更新や運用のご相談も承ります。"
+
+#: inc/block-patterns.php:129
+msgid "Yes. Duplicate or remove FAQ item groups to use the number you need."
+msgstr "はい。FAQ項目のグループを複製・削除して、必要な数に調整できます。"
+
+#: inc/block-patterns.php:130
+msgid "Start with a free consultation"
+msgstr "まずはお気軽にご相談ください"
+
+#: inc/block-patterns.php:131
+msgid "Consultations and estimates are free."
+msgstr "ご相談・お見積りは無料です。"
+
+#: inc/block-patterns.php:132
+msgid "TM"
+msgstr "担"
+
+#: inc/block-patterns.php:133
+msgid "Team member"
+msgstr "担当者"
+
+#: inc/block-patterns.php:134
+msgid "Key point"
+msgstr "ポイント"
+
+#: inc/block-patterns.php:135
+msgid "Please feel free to contact us."
+msgstr "お気軽にご相談ください。"
+
+#: inc/block-patterns.php:136
+msgid "Lists and links remain editable as standard blocks."
+msgstr "リストやリンクも標準ブロックのまま編集できます。"
+
+#: inc/block-patterns.php:137
+msgid "RE"
+msgstr "返"
+
+#: inc/block-patterns.php:138
+msgid "Reply"
+msgstr "返信"
+
+#: inc/block-patterns.php:139
+msgid "We will recommend the best approach for your needs."
+msgstr "ご要望に合わせて、最適な進め方をご案内します。"
+
+#: inc/block-patterns.php:140
+msgid "Link"
+msgstr "リンク"
+
+#: inc/block-patterns.php:141
+msgid "Text inside the speech bubble remains fully editable."
+msgstr "吹き出し内の文章もそのまま編集できます。"
+
+#: inc/block-patterns.php:142
+msgid "Replace the image and edit the message directly."
+msgstr "画像を差し替えて、そのままメッセージを編集できます。"
+
+#: inc/block-patterns.php:143
+msgid "The avatar, name, and text are all editable."
+msgstr "アバター、名前、本文はすべて編集可能です。"
+
+#: inc/block-patterns.php:144
+msgid "Avatar image placeholder"
+msgstr "アバター画像のプレースホルダー"
+
+#: inc/block-patterns.php:145 inc/block-patterns.php:317
+#: inc/block-patterns.php:327
+msgid "An editable speech bubble that uses a standard image block."
+msgstr "画像ブロックのまま、編集しやすい吹き出しとして使えます。"
+
+#: inc/block-patterns.php:146
+msgid "Text containing links remains fully editable."
+msgstr "リンクを含む文章もそのまま編集できます。"
+
+#: inc/block-patterns.php:187
+msgid "A front page layout composed of the bundled landing-page sections."
+msgstr "既存のランディングパーツを組み合わせたトップページ雛形です。"
+
+#: inc/block-patterns.php:196
+msgid "Hero"
+msgstr "ヒーロー"
+
+#: inc/block-patterns.php:197
+msgid ""
+"An editable hero section with a label, heading, text, buttons, and an image."
+msgstr "ラベル・見出し・本文・ボタン・画像を編集できるヒーローセクションです。"
+
+#: inc/block-patterns.php:206
+msgid "Features"
+msgstr "特長"
+
+#: inc/block-patterns.php:207
+msgid "An editable features section with a heading and three feature cards."
+msgstr "見出しと3つの特徴カードを編集できる特長セクションです。"
+
+#: inc/block-patterns.php:217
+msgid "An editable process section with four step cards."
+msgstr "4つのステップカードで流れを編集できる案内セクションです。"
+
+#: inc/block-patterns.php:227
+msgid ""
+"An editable testimonials section with a heading and three testimonial cards."
+msgstr "見出しと3件の声カードを編集できるお客様の声セクションです。"
+
+#: inc/block-patterns.php:237
+msgid ""
+"An editable profile section with an image, role, introduction, and button."
+msgstr "画像・肩書・紹介文・ボタンを編集できるプロフィールセクションです。"
+
+#: inc/block-patterns.php:247
+msgid "An editable pricing section with a heading and three plan cards."
+msgstr "見出しと3つのプランカードを編集できる料金セクションです。"
+
+#: inc/block-patterns.php:257
+msgid "A simple row-based layout for editable company or store information."
+msgstr "会社や店舗の情報を、行ごとに編集できるシンプルなレイアウトです。"
+
+#: inc/block-patterns.php:277
+msgid "An editable layout for frequently asked questions."
+msgstr "よくある質問を、そのまま編集できる構成です。"
+
+#: inc/block-patterns.php:287
+msgid "An editable call-to-action box with a label, heading, text, and button."
+msgstr "ラベル・見出し・本文・ボタンを編集できるCTAボックスです。"
+
+#: inc/block-patterns.php:296
+msgid "Speech Bubble / Text Avatar / Left"
+msgstr "吹き出し / テキストアバター / 左"
+
+#: inc/block-patterns.php:297
+msgid "A left-aligned speech bubble with an editable text avatar."
+msgstr "左向きの吹き出しで、テキストアバターを編集できます。"
+
+#: inc/block-patterns.php:306
+msgid "Speech Bubble / Text Avatar / Right"
+msgstr "吹き出し / テキストアバター / 右"
+
+#: inc/block-patterns.php:307
+msgid "A right-aligned speech bubble with an editable text avatar."
+msgstr "右向きの吹き出しで、テキストアバターを編集できます。"
+
+#: inc/block-patterns.php:316
+msgid "Speech Bubble / Image Avatar / Left"
+msgstr "吹き出し / 画像アバター / 左"
+
+#: inc/block-patterns.php:326
+msgid "Speech Bubble / Image Avatar / Right"
+msgstr "吹き出し / 画像アバター / 右"
+
+#: inc/customizer.php:76
+msgid "variable Thema Appearance"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Basic color settings for variable Thema."
+msgstr ""
+
+#: inc/customizer.php:85
+msgid "variable Thema Header"
+msgstr ""
+
+#: inc/customizer.php:86
+msgid "Header display settings for variable Thema."
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "variable Thema Footer"
+msgstr ""
+
+#: inc/customizer.php:95
+msgid "Footer display settings for variable Thema."
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Footer copyright note"
+msgstr ""
+
+#: inc/parts-registry.php:22
+msgid "vt-button"
+msgstr ""
+
+#: inc/parts-registry.php:23 inc/parts-registry.php:36
+#: inc/parts-registry.php:49 inc/parts-registry.php:127
+#: inc/parts-registry.php:244 inc/parts-registry.php:257
+#: inc/parts-registry.php:270
+msgid "UI"
+msgstr ""
+
+#: inc/parts-registry.php:25
+msgid "Primary, outline, and text-style button classes."
+msgstr ""
+
+#: inc/parts-registry.php:30
+msgid "Use for links or buttons that need the shared theme button style."
+msgstr ""
+
+#: inc/parts-registry.php:35
+msgid "vt-card"
+msgstr ""
+
+#: inc/parts-registry.php:38
+msgid "Shared card shell with border, radius, and surface background."
+msgstr ""
+
+#: inc/parts-registry.php:43
+msgid "Use as a common wrapper class for repeated content cards."
+msgstr ""
+
+#: inc/parts-registry.php:48
+msgid "vt-section-header"
+msgstr ""
+
+#: inc/parts-registry.php:51
+msgid "Reusable section heading with optional eyebrow and description."
+msgstr ""
+
+#: inc/parts-registry.php:56
+msgid ""
+"Pass title, eyebrow, description, and heading level through template args."
+msgstr ""
+
+#: inc/parts-registry.php:61
+msgid "vt-page-hero"
+msgstr ""
+
+#: inc/parts-registry.php:62
+msgid "Layout"
+msgstr ""
+
+#: inc/parts-registry.php:64
+msgid "Page header and archive header presentation."
+msgstr ""
+
+#: inc/parts-registry.php:69
+msgid "Uses WordPress query context to choose the title and description."
+msgstr ""
+
+#: inc/parts-registry.php:74
+msgid "vt-post-card"
+msgstr ""
+
+#: inc/parts-registry.php:75 inc/parts-registry.php:88
+#: inc/parts-registry.php:283
+msgid "Content"
+msgstr ""
+
+#: inc/parts-registry.php:77
+msgid "Loop card for posts and archive lists."
+msgstr ""
+
+#: inc/parts-registry.php:82
+msgid "Uses the standard WordPress loop and theme template tags."
+msgstr ""
+
+#: inc/parts-registry.php:87
+msgid "vt-latest-posts"
+msgstr ""
+
+#: inc/parts-registry.php:90
+msgid "Reusable latest posts section for homepage and landing pages."
+msgstr ""
+
+#: inc/parts-registry.php:95
+msgid ""
+"Accepts post_types, posts_per_page, use_excerpt, archive_link, title, and "
+"tabs args through template args or the variable_latest_posts shortcode."
+msgstr ""
+
+#: inc/parts-registry.php:100
+msgid "breadcrumb"
+msgstr ""
+
+#: inc/parts-registry.php:101 inc/parts-registry.php:114
+msgid "Navigation"
+msgstr ""
+
+#: inc/parts-registry.php:103
+msgid "Simple breadcrumb for standard WordPress pages."
+msgstr ""
+
+#: inc/parts-registry.php:108
+msgid ""
+"Current implementation stays lightweight and avoids plugin dependencies."
+msgstr ""
+
+#: inc/parts-registry.php:113
+msgid "Mobile navigation"
+msgstr "モバイルナビ"
+
+#: inc/parts-registry.php:116
+msgid "Accessible hamburger menu foundation for the primary menu."
+msgstr ""
+
+#: inc/parts-registry.php:121
+msgid ""
+"Uses aria-controls, aria-expanded, Escape close, and link-click close "
+"behavior."
+msgstr ""
+
+#: inc/parts-registry.php:126
+msgid "variable-linkcard"
+msgstr ""
+
+#: inc/parts-registry.php:129
+msgid "Editable Gutenberg pattern for rich internal or external link cards."
+msgstr ""
+
+#: inc/parts-registry.php:133
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"LinkCard."
+msgstr ""
+
+#: inc/parts-registry.php:134
+msgid ""
+"Image, title, excerpt, and meta text stay editable as standard blocks. OGP "
+"fetching, shortcode behavior, JavaScript, external API calls, and existing "
+"mu-plugin integration are intentionally not included."
+msgstr ""
+
+#: inc/parts-registry.php:139
+msgid "variable-hero"
+msgstr ""
+
+#: inc/parts-registry.php:140 inc/parts-registry.php:153
+#: inc/parts-registry.php:166 inc/parts-registry.php:179
+#: inc/parts-registry.php:192 inc/parts-registry.php:205
+#: inc/parts-registry.php:218 inc/parts-registry.php:231
+msgid "Landing"
+msgstr ""
+
+#: inc/parts-registry.php:142
+msgid ""
+"Editable landing hero pattern with label, title, lead text, buttons, and "
+"image."
+msgstr ""
+
+#: inc/parts-registry.php:146
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Hero."
+msgstr ""
+
+#: inc/parts-registry.php:147
+msgid ""
+"Built with standard Group, Paragraph, Heading, Buttons, Button, and Image "
+"blocks. No slider, video background, shortcode, custom block, JavaScript, "
+"external API, CPT, ACF, settings screen, or activation toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:152
+msgid "variable-homepage"
+msgstr ""
+
+#: inc/parts-registry.php:155
+msgid ""
+"Editable homepage starter pattern assembled from multiple landing parts."
+msgstr ""
+
+#: inc/parts-registry.php:159
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Homepage."
+msgstr ""
+
+#: inc/parts-registry.php:160
+msgid ""
+"Combines Hero, Feature, Testimonial, Step, Profile, Price, FAQ, CTA, and "
+"Company sections into one editable page starter. No new CSS, JavaScript, "
+"CPT, external API, shortcode, custom block, settings screen, or activation "
+"toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:165
+msgid "variable-feature"
+msgstr ""
+
+#: inc/parts-registry.php:168
+msgid "Editable landing feature section with heading and three feature cards."
+msgstr ""
+
+#: inc/parts-registry.php:172
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Feature."
+msgstr ""
+
+#: inc/parts-registry.php:173
+msgid ""
+"Built with standard Group, Heading, and Paragraph blocks. No shortcode, "
+"custom block, JavaScript, external API, CPT, ACF, settings screen, or "
+"activation toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:178
+msgid "variable-step"
+msgstr ""
+
+#: inc/parts-registry.php:181
+msgid "Editable landing step section with four process cards."
+msgstr ""
+
+#: inc/parts-registry.php:185
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Step."
+msgstr ""
+
+#: inc/parts-registry.php:186
+msgid ""
+"Built with standard Group, Paragraph, and Heading blocks. No animation, "
+"shortcode, custom block, JavaScript, external API, CPT, ACF, settings "
+"screen, or activation toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:191
+msgid "variable-testimonial"
+msgstr ""
+
+#: inc/parts-registry.php:194
+msgid ""
+"Editable testimonial section with heading and three customer voice cards."
+msgstr ""
+
+#: inc/parts-registry.php:198
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Testimonial."
+msgstr ""
+
+#: inc/parts-registry.php:199
+msgid ""
+"Built with standard Group, Heading, Paragraph, and Image blocks. Photos, "
+"names, company meta, and comments stay editable. No JavaScript, CPT, "
+"external API, Google review integration, shortcode, custom block, settings "
+"screen, or activation toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:204
+msgid "variable-profile"
+msgstr ""
+
+#: inc/parts-registry.php:207
+msgid ""
+"Editable representative or staff profile section with image, role, bio, and "
+"button."
+msgstr ""
+
+#: inc/parts-registry.php:211
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Profile."
+msgstr ""
+
+#: inc/parts-registry.php:212
+msgid ""
+"Built with standard Group, Heading, Paragraph, Image, Buttons, and Button "
+"blocks. Photo, name, role, bio, and button stay editable. No staff CPT, SNS "
+"automation, slider, shortcode, custom block, external API, settings screen, "
+"or activation toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:217
+msgid "variable-price"
+msgstr ""
+
+#: inc/parts-registry.php:220
+msgid "Editable pricing section with heading and three plan cards."
+msgstr ""
+
+#: inc/parts-registry.php:224
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Price."
+msgstr ""
+
+#: inc/parts-registry.php:225
+msgid ""
+"Built with standard Group, Heading, Paragraph, List, Buttons, and Button "
+"blocks. Plan names, amounts, descriptions, feature lists, and buttons stay "
+"editable. No JavaScript, CPT, external API, payment integration, shortcode, "
+"custom block, settings screen, or activation toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:230
+msgid "variable-company"
+msgstr ""
+
+#: inc/parts-registry.php:233
+msgid ""
+"Editable company or shop information section with table-like rows, note, and "
+"button."
+msgstr ""
+
+#: inc/parts-registry.php:237
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"Company."
+msgstr ""
+
+#: inc/parts-registry.php:238
+msgid ""
+"Built with standard Group, Heading, Paragraph, Buttons, and Button blocks "
+"instead of a Table block. Company name, address, phone, hours, business "
+"details, note, and button stay editable. No Google Map integration, "
+"Schema.org markup, JavaScript, CPT, external API, shortcode, custom block, "
+"settings screen, or activation toggle is included."
+msgstr ""
+
+#: inc/parts-registry.php:243
+msgid "variable-faq"
+msgstr ""
+
+#: inc/parts-registry.php:246
+msgid "Editable Gutenberg pattern for FAQ question and answer lists."
+msgstr ""
+
+#: inc/parts-registry.php:250
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"FAQ."
+msgstr ""
+
+#: inc/parts-registry.php:251
+msgid ""
+"Questions and answers stay editable as standard heading and paragraph "
+"blocks. Accordion behavior, JSON-LD structured data, custom blocks, admin "
+"screens, shortcodes, and JavaScript are intentionally not included."
+msgstr ""
+
+#: inc/parts-registry.php:256
+msgid "variable-balloon"
+msgstr ""
+
+#: inc/parts-registry.php:259
+msgid "Reusable conversation balloon for notes, guidance, and dialogue."
+msgstr ""
+
+#: inc/parts-registry.php:263
+msgid ""
+"Gutenberg patterns: open Patterns, choose variable Thema Parts, then insert "
+"Balloon / Text Avatar / Left, Balloon / Text Avatar / Right, Balloon / Image "
+"Avatar / Left, or Balloon / Image Avatar / Right."
+msgstr ""
+
+#: inc/parts-registry.php:264
+msgid ""
+"Add these from Gutenberg patterns. Text Avatar patterns keep an editable "
+"label. Image Avatar patterns use core/image with assets/images/dummy-"
+"avatar.svg as a replaceable placeholder and expose avatar, name, and body "
+"only. No shortcode, custom block, JavaScript, or custom HTML workflow is "
+"required."
+msgstr "Gutenbergパターンから追加できます。テキストアバターのパターンはラベルを編集でき、画像アバターのパターンは差し替え可能な assets/images/dummy-avatar.svg を使用した core/image で、アバター・名前・本文だけを表示します。ショートコード、カスタムブロック、JavaScript、カスタムHTMLの操作は不要です。"
+
+#: inc/parts-registry.php:269
+msgid "variable-cta"
+msgstr ""
+
+#: inc/parts-registry.php:272
+msgid "Editable Gutenberg pattern for a focused call-to-action box."
+msgstr ""
+
+#: inc/parts-registry.php:276
+msgid ""
+"Gutenberg pattern: open Patterns, choose variable Thema Parts, then insert "
+"CTA."
+msgstr ""
+
+#: inc/parts-registry.php:277
+msgid ""
+"Label, title, text, and button stay editable as standard blocks. Form "
+"integration, automatic phone links, measurement events, multi-button "
+"variants, custom blocks, shortcodes, JavaScript, and external APIs are "
+"intentionally not included."
+msgstr ""
+
+#: inc/parts-registry.php:282
+msgid "Works card planned"
+msgstr "Works card予定"
+
+#: inc/parts-registry.php:285
+msgid "Planned card for works-style content."
+msgstr ""
+
+#: inc/parts-registry.php:289
+msgid "Not implemented."
+msgstr ""
+
+#: inc/parts-registry.php:290
+msgid "CPT and data ownership should be decided before implementation."
+msgstr ""
+
+#: inc/parts-registry.php:305
+msgid "Implemented"
+msgstr "実装済み"
+
+#: inc/parts-registry.php:306
+msgid "Planned"
+msgstr "予定"
+
+#: inc/parts-registry.php:307
+msgid "Optional"
+msgstr "オプション"
+
+#: inc/parts-registry.php:308
+msgid "Integration point only"
+msgstr "受け口のみ"
+
+#: inc/parts-registry.php:309
+msgid "Deprecated / Saving disabled"
+msgstr "非推奨・保存停止"
+
+#: inc/shortcodes.php:59
+msgid "News and Blog"
+msgstr "ニュース・ブログ"
+
+#: inc/shortcodes.php:62 inc/shortcodes.php:76
+msgid "View all news and blog posts"
+msgstr "ニュース・ブログ一覧へ"
+
+#: inc/template-tags.php:90
+msgid ", "
+msgstr ""
+
+#. translators: %s: Formatted service price.
+#: inc/template-tags.php:240
+#, php-format
+msgid "¥%s (tax included)"
+msgstr "￥%s（税込）"
+
+#: single-service.php:101
+msgid "Service categories"
+msgstr "サービスカテゴリー"
+
+#: single-service.php:123
+msgid "Service overview"
+msgstr "サービス概要"
+
+#: single-service.php:134
+msgid "Price"
+msgstr "料金"
+
+#: single-service.php:141
+msgid "Duration"
+msgstr "期間"
+
+#: single-service.php:148
+msgid "Coverage"
+msgstr "対応範囲"
+
+#: single-service.php:175 template-parts/content-page.php:23
+#: template-parts/content-single.php:31
+msgid "Page links"
+msgstr "ページリンク"
+
+#: single-service.php:215
+msgid "Related services"
+msgstr "関連サービス"
+
+#: template-parts/breadcrumb.php:16
+msgid "Breadcrumb"
+msgstr "パンくずリスト"
+
+#: template-parts/breadcrumb.php:19
+msgid "Home"
+msgstr "ホーム"
+
+#: template-parts/breadcrumb.php:30 template-parts/page-header.php:17
+msgid "Posts"
+msgstr "投稿"
+
+#: template-parts/breadcrumb.php:37
+msgid "Search"
+msgstr "検索"
+
+#: template-parts/breadcrumb.php:39
+msgid "Not Found"
+msgstr "見つかりません"
+
+#: template-parts/content-none.php:13
+msgid "No content found"
+msgstr "コンテンツが見つかりません"
+
+#: template-parts/content-none.php:15
+msgid "There is no content to display yet."
+msgstr "表示するコンテンツはまだありません。"
+
+#: template-parts/faq-list.php:30
+msgid "View all frequently asked questions"
+msgstr "よくあるご質問一覧へ"
+
+#: template-parts/front-hero.php:20
+msgid "Welcome"
+msgstr "ようこそ"
+
+#: template-parts/latest-posts.php:19 template-parts/latest-posts.php:190
+msgid "Latest Posts"
+msgstr "最新の投稿"
+
+#: template-parts/latest-posts.php:22
+msgid "View all posts"
+msgstr "投稿一覧を見る"
+
+#: template-parts/latest-posts.php:161
+msgid "Blog"
+msgstr "ブログ"
+
+#: template-parts/latest-posts.php:178
+msgid "All"
+msgstr "すべて"
+
+#: template-parts/latest-posts.php:194
+msgid "Read the latest articles from this site."
+msgstr "このサイトの最新記事をご覧ください。"
+
+#. translators: %s: Post type label.
+#: template-parts/latest-posts.php:221
+#, php-format
+msgid "View all %s"
+msgstr "%s一覧へ"
+
+#: template-parts/latest-posts.php:258
+msgid "Previous"
+msgstr "前へ"
+
+#: template-parts/latest-posts.php:275 template-parts/post-card.php:17
+msgid "Read more"
+msgstr "続きを読む"
+
+#: template-parts/latest-posts.php:286
+msgid "No posts are currently available."
+msgstr "現在表示できる記事はありません。"
+
+#: template-parts/latest-posts.php:296
+msgid "Next"
+msgstr "次へ"
+
+#. translators: %s: search query.
+#: template-parts/page-header.php:24
+#, php-format
+msgid "Search results for: %s"
+msgstr "「%s」の検索結果"
+
+#: template-parts/page-header.php:28
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
+#: template-parts/site-footer.php:50
+msgid "X"
+msgstr ""
+
+#: template-parts/site-footer.php:51
+msgid "View X"
+msgstr "Xを見る"
+
+#: template-parts/site-footer.php:56
+msgid "Instagram"
+msgstr ""
+
+#: template-parts/site-footer.php:57
+msgid "View Instagram"
+msgstr "Instagramを見る"
+
+#: template-parts/site-footer.php:62
+msgid "Facebook"
+msgstr ""
+
+#: template-parts/site-footer.php:63
+msgid "View Facebook"
+msgstr "Facebookを見る"
+
+#: template-parts/site-footer.php:68
+msgid "YouTube"
+msgstr ""
+
+#: template-parts/site-footer.php:69
+msgid "View YouTube"
+msgstr "YouTubeを見る"
+
+#: template-parts/site-footer.php:74
+msgid "LinkedIn"
+msgstr ""
+
+#: template-parts/site-footer.php:75
+msgid "View LinkedIn"
+msgstr "LinkedInを見る"
+
+#: template-parts/site-footer.php:135
+msgid "Contact links"
+msgstr "連絡先リンク"
+
+#: template-parts/site-footer.php:137
+msgid "Contact by email"
+msgstr "メールで問い合わせる"
+
+#: template-parts/site-footer.php:148
+msgid "Contact via WhatsApp"
+msgstr "WhatsAppで問い合わせる"
+
+#: template-parts/site-footer.php:155
+msgid "WhatsApp"
+msgstr ""
+
+#: template-parts/site-footer.php:162
+msgid "Social links"
+msgstr "ソーシャルリンク"
+
+#: template-parts/site-header.php:42
+msgid "Menu"
+msgstr "メニュー"
+
+#: template-parts/site-header.php:50
+msgid "Toggle submenu"
+msgstr "サブメニューを切り替え"
+
+#: inc/block-patterns.php:147 inc/block-patterns.php:336
+msgid "Hero / Main Visual"
+msgstr "ヒーロー / メインビジュアル"
+
+#: inc/block-patterns.php:148
+msgid "Hero content"
+msgstr "ヒーローコンテンツ"
+
+#: inc/block-patterns.php:149
+msgid "Create a first impression that stays with visitors"
+msgstr "訪れた人の心に残る、第一印象をつくる"
+
+#: inc/block-patterns.php:150
+msgid ""
+"Replace the background image, headline, text, and button link to build the "
+"main visual for your site."
+msgstr "背景画像・見出し・本文・ボタンのリンクを差し替えて、サイトのメインビジュアルを作成できます。"
+
+#: inc/block-patterns.php:151
+msgid "Get started"
+msgstr "はじめる"
+
+#: inc/block-patterns.php:337
+msgid ""
+"A cover section with a replaceable background image, heading, text, and "
+"button."
+msgstr "背景画像・見出し・本文・ボタンを編集できるカバーセクションです。"
+
+#. Template Name of the theme
+msgid "Landing page"
+msgstr "ランディングページ"
