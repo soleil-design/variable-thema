@@ -10,6 +10,7 @@
 - Added the Hero / Main Visual block pattern built from core Cover, Group, Heading, Paragraph, and Button blocks.
 - Added a Landing page template that keeps the page title for screen readers, lets full-width blocks span the main area directly below the site header, and keeps the front page hero; the Hero / Main Visual pattern now uses full-width alignment.
 - Replaced the theme screenshot with a parent-theme-only view and documented the screenshot photograph and logo in readme.txt.
+- Fixed bundled pattern grid and flex layouts on the front end, where the classic-theme Group inner container wrapper collapsed feature, step, testimonial, price, profile, company, FAQ, hero, and speech bubble items into a single column.
 
 ## 0.9.1 - 2026-09-17
 

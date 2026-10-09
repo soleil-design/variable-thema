@@ -44,6 +44,7 @@ No. Persistent content models belong in plugins. The theme can present plugin-pr
 * Removed the legacy Google Maps API key helpers; map features and API keys belong in a plugin.
 * Added the Hero / Main Visual block pattern and a Landing page template.
 * Replaced the theme screenshot.
+* Fixed bundled block pattern layouts that collapsed into a single column on the front end.
 
 = 0.9.1 =
 

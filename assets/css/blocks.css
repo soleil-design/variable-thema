@@ -4,6 +4,30 @@
  * Keep generic theme components in components.css.
  */
 
+/*
+ * Classic themes get a .wp-block-group__inner-container wrapper inside Group
+ * blocks on the front end, which would become the only grid or flex item of
+ * these pattern containers. Remove its box so the pattern items lay out as in
+ * the editor. :where() keeps specificity low so Skin rules on the wrapper win.
+ */
+:where(
+	.vt-hero,
+	.vt-feature__grid,
+	.vt-testimonial__grid,
+	.vt-testimonial__item,
+	.vt-step__list,
+	.vt-profile__card,
+	.vt-price__grid,
+	.vt-price__item,
+	.vt-faq,
+	.vt-faq__item,
+	.vt-company__row,
+	.vt-balloon,
+	.vt-balloon__avatar
+) > .wp-block-group__inner-container {
+	display: contents;
+}
+
 .vt-balloon,
 .editor-styles-wrapper .vt-balloon {
 	display: flex;
@@ -19,6 +43,7 @@
 }
 
 .vt-balloon > .vt-balloon__avatar,
+.vt-balloon > .wp-block-group__inner-container > .vt-balloon__avatar,
 .editor-styles-wrapper .vt-balloon > .vt-balloon__avatar {
 	display: flex;
 	flex: 0 0 72px;
@@ -80,6 +105,7 @@
 }
 
 .vt-balloon__avatar > .vt-balloon__name,
+.vt-balloon__avatar > .wp-block-group__inner-container > .vt-balloon__name,
 .editor-styles-wrapper .vt-balloon__avatar > .vt-balloon__name {
 	width: 100%;
 	margin: 0.35rem 0 0;
@@ -87,6 +113,7 @@
 }
 
 .vt-balloon > .vt-balloon__content,
+.vt-balloon > .wp-block-group__inner-container > .vt-balloon__content,
 .editor-styles-wrapper .vt-balloon > .vt-balloon__content {
 	flex: 1 1 0;
 	min-width: 0;
@@ -443,6 +470,7 @@
 }
 
 .vt-faq > .vt-faq__item,
+.vt-faq > .wp-block-group__inner-container > .vt-faq__item,
 .editor-styles-wrapper .vt-faq > .vt-faq__item,
 .vt-faq__list .vt-faq__item,
 .editor-styles-wrapper .vt-faq__list .vt-faq__item {
@@ -962,6 +990,7 @@
 	}
 
 	.vt-faq > .vt-faq__item,
+	.vt-faq > .wp-block-group__inner-container > .vt-faq__item,
 	.editor-styles-wrapper .vt-faq > .vt-faq__item,
 	.vt-faq__list .vt-faq__item,
 	.editor-styles-wrapper .vt-faq__list .vt-faq__item {
