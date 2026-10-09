@@ -264,6 +264,7 @@
 	}
 
 	.vt-balloon > .vt-balloon__avatar,
+	.vt-balloon > .wp-block-group__inner-container > .vt-balloon__avatar,
 	.editor-styles-wrapper .vt-balloon > .vt-balloon__avatar {
 		flex-basis: 60px;
 		width: 60px;
@@ -271,6 +272,7 @@
 	}
 
 	.vt-balloon > .vt-balloon__content,
+	.vt-balloon > .wp-block-group__inner-container > .vt-balloon__content,
 	.editor-styles-wrapper .vt-balloon > .vt-balloon__content {
 		min-width: 0;
 		padding-top: 0.125rem;
@@ -317,6 +319,7 @@
 	}
 
 	.vt-balloon > .vt-balloon__avatar,
+	.vt-balloon > .wp-block-group__inner-container > .vt-balloon__avatar,
 	.editor-styles-wrapper .vt-balloon > .vt-balloon__avatar {
 		flex-basis: 56px;
 		width: 56px;
