@@ -97,15 +97,99 @@ function variable_thema_enqueue_dashicons_frontend() {
 add_action( 'wp_enqueue_scripts', 'variable_thema_enqueue_dashicons_frontend' );
 
 /**
- * Enqueue block editor presentation styles.
+ * Check whether a template candidate list resolves to a parent theme file.
+ *
+ * @since 1.0.0
+ * @param string[] $templates Template file names in hierarchy order.
+ * @return bool
+ */
+function variable_thema_is_parent_template( $templates ) {
+	$located = locate_template( $templates );
+
+	return '' !== $located && 0 === strpos( wp_normalize_path( $located ), trailingslashit( wp_normalize_path( get_template_directory() ) ) );
+}
+
+/**
+ * Describe which parent templates render the post open in the block editor.
+ *
+ * The editor canvas mirrors the front-end width rules only for posts that the
+ * parent theme templates render; child theme templates keep their own editor
+ * styles.
+ *
+ * @since 1.0.0
+ * @return array<string, bool|string>
+ */
+function variable_thema_get_editor_layout_settings() {
+	$post             = get_post();
+	$landing_template = 'page-templates/landing.php';
+	$templates        = array();
+
+	if ( $post && 'page' === get_option( 'show_on_front' ) && (int) get_option( 'page_on_front' ) === $post->ID ) {
+		$templates[] = 'front-page.php';
+	}
+
+	$front_page_template = $templates;
+
+	if ( $post && 'page' === $post->post_type ) {
+		$templates = array_merge( $templates, array( 'page-' . $post->post_name . '.php', 'page-' . $post->ID . '.php', 'page.php' ) );
+	} elseif ( $post ) {
+		$templates = array_merge( $templates, array( 'single-' . $post->post_type . '-' . $post->post_name . '.php', 'single-' . $post->post_type . '.php', 'single.php' ) );
+	}
+
+	$templates[] = 'singular.php';
+	$templates[] = 'index.php';
+
+	return array(
+		'landingTemplate' => $landing_template,
+		'landingIsParent' => ( ! $front_page_template || '' === locate_template( $front_page_template ) ) && variable_thema_is_parent_template( array( $landing_template ) ),
+		'defaultIsParent' => $post ? variable_thema_is_parent_template( $templates ) : false,
+	);
+}
+
+/**
+ * Enqueue block editor scripts and keep the editor stylesheet handle available.
+ *
+ * Child themes may list variable-thema-editor-blocks as a dependency of their
+ * own editor stylesheets, so the handle stays registered on editor screens.
  *
  * @since 0.8.0
  * @return void
  */
 function variable_thema_enqueue_block_editor_assets() {
-	variable_thema_enqueue_style_file( 'variable-thema-editor-blocks', 'assets/css/blocks.css' );
+	wp_register_style(
+		'variable-thema-editor-blocks',
+		get_template_directory_uri() . '/assets/css/blocks.css',
+		array(),
+		variable_thema_asset_version( 'assets/css/blocks.css' )
+	);
+
+	variable_thema_enqueue_script_file( 'variable-thema-editor-layout', 'assets/js/editor-layout.js', array( 'wp-data' ) );
+	wp_add_inline_script(
+		'variable-thema-editor-layout',
+		'window.variableThemaEditorLayout = ' . wp_json_encode( variable_thema_get_editor_layout_settings() ) . ';',
+		'before'
+	);
 }
 add_action( 'enqueue_block_editor_assets', 'variable_thema_enqueue_block_editor_assets' );
+
+/**
+ * Enqueue block presentation and canvas width styles inside the block editor.
+ *
+ * Styles added on enqueue_block_assets are loaded into the iframed editor
+ * canvas, where they apply to the edited content.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+function variable_thema_enqueue_block_editor_content_assets() {
+	if ( ! is_admin() ) {
+		return;
+	}
+
+	variable_thema_enqueue_style_file( 'variable-thema-editor-blocks', 'assets/css/blocks.css' );
+	variable_thema_enqueue_style_file( 'variable-thema-editor-layout', 'assets/css/editor.css', array( 'variable-thema-editor-blocks' ) );
+}
+add_action( 'enqueue_block_assets', 'variable_thema_enqueue_block_editor_content_assets' );
 
 /**
  * Provide a callback for conditional presentation assets.

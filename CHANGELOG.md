@@ -4,6 +4,10 @@
 
 - Fixed desktop submenus closing when the submenu toggle was clicked right after hovering the menu item opened them; mouse clicks now keep a hover-opened submenu open, while keyboard activation still toggles it.
 - Added a generic search results template with the search heading, the standard search form, result cards, and the empty state.
+- Matched the block editor canvas to the front end for posts rendered by the parent theme templates: top-level blocks use the content width and side gutters, nested blocks and pattern grid items fill their containers, and full-width blocks keep the content width on the default template and span the canvas on the Landing page template. Child theme templates and editor styles keep their own layout.
+- Loaded the block editor stylesheets through `enqueue_block_assets` so they reach the iframed editor canvas without warnings; the `variable-thema-editor-blocks` handle stays registered for child theme dependencies.
+- Added the `wp-block-list` class to the lists in the Pricing and Speech Bubble patterns so inserted patterns no longer trigger block updates in the editor.
+- Japanese translation: completed "Custom section planning" and translated the FAQ pattern block names shown in the editor List View.
 
 ## 1.0.0 - 2026-10-09
 

@@ -1,0 +1,62 @@
+/*
+ * Editor layer:
+ * Block editor canvas width for posts rendered by the parent theme templates.
+ * assets/js/editor-layout.js adds .vt-editor-layout--default or
+ * .vt-editor-layout--landing to the editor canvas. Top-level blocks then match
+ * the front-end content width, min(100% - 32px, --vt-content-width): the canvas
+ * keeps the core 8px padding, so 16px more is taken here. Wide blocks keep the
+ * content width as on the front end. Full-width blocks keep the content width
+ * on the default template and span the canvas on the landing template.
+ *
+ * Specificity (0,1,2) beats the core classic editor widths (0,1,1) and stays
+ * below child theme editor rules such as
+ * .editor-styles-wrapper .is-root-container > :where(.wp-block.alignwide) (0,2,0).
+ */
+
+html :where(.vt-editor-layout--default, .vt-editor-layout--landing) div:where(.is-root-container) > .wp-block {
+	max-width: min(100% - 16px, var(--vt-content-width, 960px));
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html :where(.vt-editor-layout--landing) div:where(.is-root-container) > .wp-block:where([data-align="full"]) {
+	max-width: none;
+}
+
+/*
+ * Nested blocks fill their parent block as on the front end instead of the
+ * core 840px cap. Specificity (0,0,2) stays below any class-based max-width.
+ */
+html body :where(.vt-editor-layout--default .wp-block, .vt-editor-layout--landing .wp-block) :where(.wp-block) {
+	max-width: none;
+}
+
+/*
+ * The pattern Groups below are flow-layout blocks that blocks.css turns into
+ * grid or flex containers. Core classic editor styles center the children of
+ * flow-layout blocks with auto side margins (0,2,0), which keeps grid and flex
+ * items from stretching as they do on the front end.
+ */
+.editor-styles-wrapper :where(
+	.vt-hero,
+	.vt-feature__grid,
+	.vt-testimonial__grid,
+	.vt-testimonial__item,
+	.vt-step__list,
+	.vt-profile__card,
+	.vt-price__grid,
+	.vt-price__item,
+	.vt-faq,
+	.vt-faq__list,
+	.vt-faq__item,
+	.vt-company__row
+) > .wp-block-group__inner-container > .wp-block {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Core classic editor styles pull full-width blocks out by 8px at (0,4,1). */
+:root :where(.vt-editor-layout--default) .block-editor-block-list__layout.is-root-container > .wp-block[data-align="full"] {
+	margin-left: auto;
+	margin-right: auto;
+}

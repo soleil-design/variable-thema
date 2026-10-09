@@ -866,23 +866,23 @@ msgstr "プロフィール写真のプレースホルダー"
 
 #: inc/block-patterns.php:108
 msgid "FAQ Section"
-msgstr ""
+msgstr "FAQセクション"
 
 #: inc/block-patterns.php:109
 msgid "FAQ List"
-msgstr ""
+msgstr "FAQリスト"
 
 #: inc/block-patterns.php:110
 msgid "FAQ Item"
-msgstr ""
+msgstr "FAQ項目"
 
 #: inc/block-patterns.php:111
 msgid "Question"
-msgstr ""
+msgstr "質問"
 
 #: inc/block-patterns.php:112
 msgid "Answer"
-msgstr ""
+msgstr "回答"
 
 #: inc/block-patterns.php:113
 msgid "Hero image placeholder"
@@ -906,7 +906,7 @@ msgstr "スマホ対応確認"
 
 #: inc/block-patterns.php:118
 msgid "Custom section planning"
-msgstr "カスタム section planning"
+msgstr "セクション構成の個別設計"
 
 #: inc/block-patterns.php:119
 msgid "Additional requirements consultation"
