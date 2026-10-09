@@ -1,3 +1,9 @@
+/**
+ * Latest posts tabs: switches panels and the archive link for the selected tab.
+ *
+ * @package Variable_Thema
+ */
+
 (function () {
 	var init = function (root) {
 		var tabs        = root.querySelectorAll( '[data-vt-latest-tab]' );

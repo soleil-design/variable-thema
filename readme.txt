@@ -1,7 +1,7 @@
 === Variable Thema ===
 Contributors: soleil
 Requires at least: 6.0
-Tested up to: 6.8
+Tested up to: 7.1
 Requires PHP: 8.0
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -39,12 +39,15 @@ No. Persistent content models belong in plugins. The theme can present plugin-pr
 = 1.0.0 =
 
 * Prevented long titles and URLs from causing horizontal overflow.
-* Completed the accessible primary navigation, including keyboard support and a no-JavaScript fallback.
+* Completed the accessible primary navigation, including keyboard support, a no-JavaScript fallback, and hover-then-click handling for submenus.
+* Added a generic search results template.
 * Converted source strings to English and bundled Japanese translations.
 * Removed the legacy Google Maps API key helpers; map features and API keys belong in a plugin.
 * Added the Hero / Main Visual block pattern and a Landing page template.
+* Matched the block editor canvas to the front end: content width, full-width blocks on the default and Landing templates, and centered CTA buttons on small screens.
+* Loaded the block editor styles into the editor canvas through enqueue_block_assets.
+* Fixed bundled block pattern layouts that collapsed into a single column on the front end, and list markup that the editor updated on insert.
 * Replaced the theme screenshot.
-* Fixed bundled block pattern layouts that collapsed into a single column on the front end.
 
 = 0.9.1 =
 

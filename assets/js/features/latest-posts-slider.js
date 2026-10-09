@@ -1,3 +1,9 @@
+/**
+ * Latest posts section: tabs, slide navigation, dots, and responsive visible count.
+ *
+ * @package Variable_Thema
+ */
+
 (function () {
 	var clamp = function (value, min, max) {
 		return Math.max( min, Math.min( max, value ) );

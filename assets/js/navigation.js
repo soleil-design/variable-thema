@@ -1,3 +1,9 @@
+/**
+ * Primary navigation: menu toggle, submenu toggles, and keyboard handling.
+ *
+ * @package Variable_Thema
+ */
+
 (function () {
 	var ready = function () {
 		var toggle          = document.querySelector( '[data-vt-nav-toggle]' );
@@ -12,12 +18,12 @@
 			return;
 		}
 
-		var header             = toggle.closest( '.site-header' );
-		var submenuToggleLabel = navigation.getAttribute( 'data-vt-submenu-toggle-label' ) || 'Toggle submenu';
+		var header              = toggle.closest( '.site-header' );
+		var submenuToggleLabel  = navigation.getAttribute( 'data-vt-submenu-toggle-label' ) || 'Toggle submenu';
 		var isDesktopNavigation = function () {
 			return 'none' === window.getComputedStyle( toggle ).display;
 		};
-		var wasDesktop = isDesktopNavigation();
+		var wasDesktop          = isDesktopNavigation();
 
 		if ( header ) {
 			header.classList.toggle( 'is-navigation-desktop', wasDesktop );
@@ -88,7 +94,7 @@
 				var parentLabel   = parentLink.textContent.trim();
 
 				submenuToggle.className = 'site-nav__submenu-toggle';
-				submenuToggle.type = 'button';
+				submenuToggle.type      = 'button';
 				submenuToggle.setAttribute( 'aria-expanded', 'false' );
 				submenuToggle.setAttribute( 'aria-controls', submenu.id );
 				submenuToggle.setAttribute( 'aria-label', submenuToggleLabel + ': ' + parentLabel );

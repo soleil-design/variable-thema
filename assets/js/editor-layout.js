@@ -1,9 +1,16 @@
+/**
+ * Marks the block editor canvas with the parent template layout of the
+ * edited post, so assets/css/editor.css can match the front-end widths.
+ *
+ * @package Variable_Thema
+ */
+
 (function ( wp, settings ) {
 	if ( ! wp || ! wp.data || ! settings ) {
 		return;
 	}
 
-	var layoutClasses = [ 'vt-editor-layout--default', 'vt-editor-layout--landing' ];
+	var layoutClasses  = [ 'vt-editor-layout--default', 'vt-editor-layout--landing' ];
 	var hookedCanvases = [];
 
 	// Match the editor canvas to the parent template that renders the edited post.
