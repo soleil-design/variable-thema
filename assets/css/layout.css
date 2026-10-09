@@ -194,13 +194,13 @@
 	padding: 8px 12px;
 }
 
-.variable-thema-navigation-ready .site-header:not(.is-navigation-desktop) .site-nav__list .menu-item-has-children {
+.variable-thema-navigation-ready .site-header.is-navigation-open:not(.is-navigation-desktop) .site-nav__list .menu-item-has-children {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) auto;
 	align-items: start;
 }
 
-.variable-thema-navigation-ready .site-header:not(.is-navigation-desktop) .site-nav__list .menu-item-has-children > .sub-menu {
+.variable-thema-navigation-ready .site-header.is-navigation-open:not(.is-navigation-desktop) .site-nav__list .menu-item-has-children > .sub-menu {
 	grid-column: 1 / -1;
 }
 
