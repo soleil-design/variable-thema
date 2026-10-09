@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Fixed desktop submenus closing when the submenu toggle was clicked right after hovering the menu item opened them; mouse clicks now keep a hover-opened submenu open, while keyboard activation still toggles it.
+- Added a generic search results template with the search heading, the standard search form, result cards, and the empty state.
+
 ## 1.0.0 - 2026-10-09
 
 - Prevented long unbroken titles and URLs from causing horizontal overflow in generic title, breadcrumb, card, post-navigation, header, and footer presentation.

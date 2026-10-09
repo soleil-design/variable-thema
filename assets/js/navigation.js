@@ -97,10 +97,24 @@
 				parentLink.insertAdjacentElement( 'afterend', submenuToggle );
 				submenuToggles.push( submenuToggle );
 
+				// True while the submenu is open only because a mouse pointer entered the item.
+				var isPointerOpened = false;
+
 				submenuToggle.addEventListener(
 					'click',
-					function () {
-						setSubmenuExpanded( submenuToggle, 'true' !== submenuToggle.getAttribute( 'aria-expanded' ) );
+					function ( event ) {
+						var isExpanded = 'true' === submenuToggle.getAttribute( 'aria-expanded' );
+
+						// A mouse click on the toggle follows the hover that already opened the
+						// submenu, so keep it open instead of toggling it closed. Keyboard
+						// activation reports detail 0 and always toggles.
+						if ( isPointerOpened && isExpanded && event.detail > 0 ) {
+							isPointerOpened = false;
+							return;
+						}
+
+						isPointerOpened = false;
+						setSubmenuExpanded( submenuToggle, ! isExpanded );
 					}
 				);
 
@@ -108,6 +122,7 @@
 					'pointerenter',
 					function ( event ) {
 						if ( isDesktopNavigation() && 'touch' !== event.pointerType ) {
+							isPointerOpened = 'true' !== submenuToggle.getAttribute( 'aria-expanded' );
 							setSubmenuExpanded( submenuToggle, true );
 						}
 					}
@@ -117,6 +132,7 @@
 					'pointerleave',
 					function ( event ) {
 						if ( isDesktopNavigation() && 'touch' !== event.pointerType && ! menuItem.contains( document.activeElement ) ) {
+							isPointerOpened = false;
 							setSubmenuExpanded( submenuToggle, false );
 						}
 					}
@@ -126,6 +142,7 @@
 					'focusout',
 					function ( event ) {
 						if ( isDesktopNavigation() && ! menuItem.contains( event.relatedTarget ) ) {
+							isPointerOpened = false;
 							setSubmenuExpanded( submenuToggle, false );
 						}
 					}
