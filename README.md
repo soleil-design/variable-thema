@@ -2,7 +2,7 @@
 
 Variable Thema is the presentation layer for standard WordPress content and reusable theme components.
 
-Current release: `0.9.1`.
+Current release: `1.0.0`.
 
 Ordinary links inside post, page, comment, and caption content retain a visible underline independently of browser default styles.
 
@@ -30,7 +30,7 @@ Site-specific SWD detection may be supplied through `variable_thema_swd_page_pro
 
 The postcode-address and AI Counter gateway records never enabled runtime features. Their Parts Activation option values remain readable for compatibility, but the theme no longer presents a saving UI or writes new values. Former gateway helper functions remain available as compatibility entry points; the postcode enqueue stub is a no-op.
 
-The theme does not provide Google Maps features or manage Google Maps API keys. The former Google Maps compatibility helpers and their filters were removed in 0.9.2; map output and API key management belong in a plugin.
+The theme does not provide Google Maps features or manage Google Maps API keys. The former Google Maps compatibility helpers and their filters were removed in 1.0.0; map output and API key management belong in a plugin.
 
 ## Service data access
 

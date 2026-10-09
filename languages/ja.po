@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Variable Thema 0.9.1\n"
+"Project-Id-Version: Variable Thema 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/variable-thema\n"
-"POT-Creation-Date: 2026-10-09T04:15:29+00:00\n"
+"POT-Creation-Date: 2026-10-09T05:16:39+00:00\n"
 "PO-Revision-Date: 2026-10-08T06:35:57+00:00\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"

@@ -1,12 +1,15 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 - 2026-10-09
 
 - Prevented long unbroken titles and URLs from causing horizontal overflow in generic title, breadcrumb, card, post-navigation, header, and footer presentation.
 - Completed the generic primary navigation with independent submenu controls, keyboard focus restoration, responsive state reset, and a no-JavaScript fallback.
 - Converted user-facing source strings to English and added a generated translation template with bundled Japanese translations.
 - Removed the legacy Google Maps API key helpers (`variable_thema_get_google_maps_api_key()`, `variable_thema_has_google_maps_api_key()`, `variable_thema_get_google_maps_api_key_source()`, `variable_thema_get_google_maps_api_key_source_label()`), their `variable_thema_google_maps_api_key` and `variable_thema_google_maps_api_key_source` filters, and the unused `variable_thema_get_admin_guide_maps_state()` helper. Google Maps features and API key management belong in a plugin.
+- Hid the mobile navigation toggle until the navigation script is ready so it is never shown without JavaScript.
+- Added the Hero / Main Visual block pattern built from core Cover, Group, Heading, Paragraph, and Button blocks.
 - Added a Landing page template that keeps the page title for screen readers, lets full-width blocks span the main area directly below the site header, and keeps the front page hero; the Hero / Main Visual pattern now uses full-width alignment.
+- Replaced the theme screenshot with a parent-theme-only view and documented the screenshot photograph and logo in readme.txt.
 
 ## 0.9.1 - 2026-09-17
 

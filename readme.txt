@@ -3,7 +3,7 @@ Contributors: soleil
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 0.9.1
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,15 @@ Variable Thema provides accessible classic-theme templates, reusable cards, call
 No. Persistent content models belong in plugins. The theme can present plugin-provided content through the standard template hierarchy.
 
 == Changelog ==
+
+= 1.0.0 =
+
+* Prevented long titles and URLs from causing horizontal overflow.
+* Completed the accessible primary navigation, including keyboard support and a no-JavaScript fallback.
+* Converted source strings to English and bundled Japanese translations.
+* Removed the legacy Google Maps API key helpers; map features and API keys belong in a plugin.
+* Added the Hero / Main Visual block pattern and a Landing page template.
+* Replaced the theme screenshot.
 
 = 0.9.1 =
 
