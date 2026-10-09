@@ -60,3 +60,15 @@ html body :where(.vt-editor-layout--default .wp-block, .vt-editor-layout--landin
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/*
+ * blocks.css aligns CTA buttons to the start below 600px with
+ * .editor-styles-wrapper .vt-cta__actions (0,2,0), which wins over the core
+ * center justification in the editor only. Keep CTAs that are explicitly
+ * centered centered, as on the front end.
+ */
+@media (max-width: 599px) {
+	.editor-styles-wrapper .vt-cta__actions.is-content-justification-center {
+		justify-content: center;
+	}
+}
