@@ -14,7 +14,7 @@ Long unbroken titles and URLs wrap within page headers, breadcrumbs, cards, post
 
 - WordPress 6.5 or later is the minimum requirement (`Requires at least: 6.5`).
 - PHP 8.0 or later (`Requires PHP: 8.0`).
-- Recommended environment: the latest stable WordPress release that has been verified and updated through SWD. The theme is tested up to WordPress 7.1.
+- Recommended environment: the latest stable WordPress release.
 
 ## Navigation availability
 

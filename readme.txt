@@ -48,6 +48,7 @@ No. Persistent content models belong in plugins. The theme can present plugin-pr
 * Loaded the block editor styles into the editor canvas through enqueue_block_assets.
 * Fixed bundled block pattern layouts that collapsed into a single column on the front end, and list markup that the editor updated on insert.
 * Replaced the theme screenshot.
+* Raised the minimum supported WordPress version to 6.5 after compatibility testing.
 
 = 0.9.1 =
 
