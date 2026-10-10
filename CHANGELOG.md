@@ -16,6 +16,7 @@
 - Fixed bundled pattern grid and flex layouts on the front end, where the classic-theme Group inner container wrapper collapsed feature, step, testimonial, price, profile, company, FAQ, hero, and speech bubble items into a single column.
 - Added the `wp-block-list` class to the lists in the Pricing and Speech Bubble patterns so inserted patterns no longer trigger block updates in the editor.
 - Replaced the theme screenshot with a parent-theme-only view and documented the screenshot photograph and logo in readme.txt.
+- Raised the minimum supported WordPress version from 6.0 to 6.5 (`Requires at least: 6.5`). On WordPress 6.0 the bundled block patterns produced 25 validation warnings across 9 patterns; on WordPress 6.5.13 with PHP 8.0.30 all 16 patterns loaded with no warnings. The requirement was settled without changing theme code.
 
 ## 0.9.1 - 2026-09-17
 

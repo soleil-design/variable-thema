@@ -1,6 +1,6 @@
 === Variable Thema ===
 Contributors: soleil
-Requires at least: 6.0
+Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.0
 Stable tag: 1.0.0

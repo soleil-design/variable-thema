@@ -10,6 +10,12 @@ User-facing source strings are written in English with the `variable-thema` text
 
 Long unbroken titles and URLs wrap within page headers, breadcrumbs, cards, post navigation, and site identity areas without creating document-level horizontal scrolling.
 
+## Requirements
+
+- WordPress 6.5 or later is the minimum requirement (`Requires at least: 6.5`).
+- PHP 8.0 or later (`Requires PHP: 8.0`).
+- Recommended environment: the latest stable WordPress release that has been verified and updated through SWD. The theme is tested up to WordPress 7.1.
+
 ## Navigation availability
 
 The header applies `variable_thema_has_primary_navigation` to the standard `has_nav_menu( 'primary' )` result before rendering the primary navigation wrapper. A child theme may return true when it can provide a menu through WordPress's normal `wp_nav_menu()` rendering path. The filter must not update menu assignments or theme mods.
