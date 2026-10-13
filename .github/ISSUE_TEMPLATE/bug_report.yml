@@ -1,0 +1,83 @@
+name: Bug report
+description: Report a reproducible defect in Variable Thema.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Do not include credentials, private URLs, customer information, or other sensitive data. Report vulnerabilities privately according to SECURITY.md.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: This is not a security vulnerability or support request containing private information.
+          required: true
+  - type: input
+    id: theme-version
+    attributes:
+      label: Variable Thema version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: wordpress-version
+    attributes:
+      label: WordPress version
+      placeholder: 6.5 or later
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+      placeholder: 8.0 or later
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Theme configuration
+      options:
+        - Variable Thema parent only
+        - Variable Thema with a child theme or Skin
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain the problem and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add sanitized logs or screenshots only if they contain no sensitive information.

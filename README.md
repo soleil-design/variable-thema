@@ -1,62 +1,103 @@
 # Variable Thema
 
-Variable Thema is the presentation layer for standard WordPress content and reusable theme components.
+Variable Thema is a free, GPL-licensed classic WordPress theme that provides a
+reusable presentation frame for standard WordPress content. Site-specific
+visual design can be supplied by a child theme (a **Skin**) without moving
+persistent content or business functionality into the parent theme.
 
-Current release: `1.0.0`.
+Current version: `1.0.0`
 
-Ordinary links inside post, page, comment, and caption content retain a visible underline independently of browser default styles.
+> [!NOTE]
+> Variable Thema has been submitted for review on WordPress.org, but it has not
+> yet been approved for the official Theme Directory.
 
-User-facing source strings are written in English with the `variable-thema` text domain. Bundled Japanese translations are loaded from `languages/`, while WordPress.org language packs can override them through WordPress's standard translation system.
+## Design principles
 
-Long unbroken titles and URLs wrap within page headers, breadcrumbs, cards, post navigation, and site identity areas without creating document-level horizontal scrolling.
+Variable Thema separates responsibilities into three layers:
+
+- **Frame (Variable Thema):** generic templates, layout, navigation,
+  accessibility, reusable presentation components, and extension contracts.
+- **Skin (child theme):** site-specific visual design and presentation choices.
+- **Plugin:** persistent content models, business functionality, external API
+  integrations, and settings that must survive a theme change.
+
+Variable Thema and third-party Skins may be used, modified, and distributed
+under the GNU GPL. A Soleil service agreement is not required to use the theme
+or create, modify, distribute, or commercially use a Skin.
+
+## Features
+
+- Responsive classic-theme templates.
+- Keyboard-accessible primary navigation and skip link.
+- Reusable cards, calls to action, and 16 block patterns.
+- Default and Landing page templates with matching editor layouts.
+- English source strings with bundled Japanese translations.
+- Extension points for Skin-provided CTA definitions and site conditions.
+- No required third-party service, framework, or companion plugin.
 
 ## Requirements
 
-- WordPress 6.5 or later is the minimum requirement (`Requires at least: 6.5`).
-- PHP 8.0 or later (`Requires PHP: 8.0`).
-- Recommended environment: the latest stable WordPress release.
+- WordPress 6.5 or later.
+- PHP 8.0 or later.
+- The latest stable WordPress release is recommended.
 
-## Navigation availability
+## Installation
 
-The header applies `variable_thema_has_primary_navigation` to the standard `has_nav_menu( 'primary' )` result before rendering the primary navigation wrapper. A child theme may return true when it can provide a menu through WordPress's normal `wp_nav_menu()` rendering path. The filter must not update menu assignments or theme mods.
+1. Download or clone the repository into `wp-content/themes/variable-thema`.
+2. In WordPress, open **Appearance > Themes**.
+3. Activate **Variable Thema**.
+4. Assign the Primary and Footer menu locations as needed.
+5. Configure the site identity and presentation settings in the Customizer.
 
-When JavaScript is available, parent menu items receive a separate accessible submenu toggle while their links retain normal navigation behavior. Without JavaScript, WordPress's nested menu links remain visible and usable.
+No plugin is required for the parent theme's standard templates and
+presentation features. Plugin-provided content types are displayed only when
+the relevant plugin is installed.
 
-## Latest Posts ownership
+## Developing a Skin
 
-The persistent `[variable_latest_posts]` shortcode is owned by Soleil Content Core. Variable Thema supplies optional presentation through `soleil_content_core_latest_posts_renderer` and keeps `variable_thema_render_latest_posts_shortcode()` as an unhooked compatibility callback. The theme does not register the shortcode.
+A Skin is a standard WordPress child theme. It may override presentation,
+templates, styles, and supported extension points while leaving persistent data
+and business functionality to plugins.
 
-## CTA and site conditions
+Public compatibility contracts and responsibility boundaries are documented in
+[ARCHITECTURE.md](ARCHITECTURE.md). Backward-compatible hooks and functions
+listed there should not be removed or have their signatures changed without a
+documented deprecation path.
 
-`variable_get_cta_registry()`, `variable_get_cta_args()`, the `variable_cta_registry` filter, the CTA icon API, renderer, template arguments, hooks, and CSS classes remain public compatibility contracts. A site layer may supply definitions through `variable_thema_cta_registry_provider`; without a valid provider, the generic registry is empty before the final public filter runs.
+The GPL license does not restrict who may create or sell a Skin. “Variable
+Thema” and “Soleil” names and branding should not be used to imply endorsement
+or official status without permission.
 
-Site-specific SWD detection may be supplied through `variable_thema_swd_page_provider`. The public `variable_thema_is_swd_page()` function remains available and returns false when no provider exists. Site-specific guide cards may be appended with `variable_thema_admin_guide_site_sections`.
+## Translation
 
-## Deprecated gateway settings
+User-facing source strings use the `variable-thema` text domain. The
+`languages/` directory contains the translation template and bundled Japanese
+translation. WordPress.org language packs may override bundled translations
+through WordPress's standard translation system.
 
-The postcode-address and AI Counter gateway records never enabled runtime features. Their Parts Activation option values remain readable for compatibility, but the theme no longer presents a saving UI or writes new values. Former gateway helper functions remain available as compatibility entry points; the postcode enqueue stub is a no-op.
+## Documentation
 
-The theme does not provide Google Maps features or manage Google Maps API keys. The former Google Maps compatibility helpers and their filters were removed in 1.0.0; map output and API key management belong in a plugin.
+- [Architecture and compatibility contracts](ARCHITECTURE.md)
+- [Contributing](CONTRIBUTING.md)
+- [Support](SUPPORT.md)
+- [Security policy](SECURITY.md)
+- [Changelog](CHANGELOG.md)
+- [WordPress.org theme readme](readme.txt)
 
-## Service data access
+`readme.txt` is the distribution metadata and user-facing description for the
+WordPress.org theme package. This README is the project overview for GitHub.
 
-Service presentation reads normalized values through Soleil Content Core when available. If Core is unavailable, the theme reads the existing `service_*` post meta with WordPress APIs, so ACF is not required for frontend rendering. Service formatting helpers and template markup remain backward compatible.
+## Contributing and support
 
-## FAQ ownership
+Bug reports and contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md)
+before opening a pull request and [SUPPORT.md](SUPPORT.md) before requesting
+help. Do not disclose security vulnerabilities in a public issue; follow
+[SECURITY.md](SECURITY.md) instead.
 
-Since version 0.3.0, Soleil Content Core owns the `faq` post type, `faq_category` taxonomy, `[variable_faq_list]` shortcode, and FAQ migration state. Variable Thema retains only `archive-faq.php`, `template-parts/faq-list.php`, and the related presentation styles.
+## License
 
-The legacy FAQ functions remain as deprecated, unhooked compatibility wrappers. Without Soleil Content Core, the theme does not register the FAQ content model and falls back safely to standard WordPress templates.
+Variable Thema is Copyright 2026 株式会社Soleil and is distributed under the GNU
+General Public License version 2 or later. See [license.txt](license.txt).
 
-## Site Profile ownership
-
-Since version 0.4.0, Soleil Content Core owns the `variable_site_profile` option, field schema, sanitization, saving, administration, and formal read API. Variable Thema retains only the deprecated `variable_get_site_profile()` display compatibility wrapper. When Core is unavailable, the wrapper returns an empty profile (or the caller-provided keyed default) without a fatal error.
-
-## Contact Form 7 redirect ownership
-
-Since version 0.5.0, Soleil Content Core owns the Contact Form 7 success-event redirect and its frontend asset. Variable Thema contains no CF7 event listener or redirect-specific enqueue. Existing form markup may continue to use the public `data-thanks-url` attribute.
-
-## Bundled resources
-
-- WordPress Dashicons: GPLv2 or later.
-- `assets/images/dummy-avatar.svg`: original project artwork created for Variable Thema in 2026; GPLv2 or later.
+Bundled resource licensing and attribution are documented in
+[readme.txt](readme.txt).

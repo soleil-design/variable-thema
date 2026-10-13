@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support guidance
+    url: https://github.com/soleil-design/variable-thema/blob/main/SUPPORT.md
+    about: Read the support scope before opening an issue.
+  - name: Security policy
+    url: https://github.com/soleil-design/variable-thema/blob/main/SECURITY.md
+    about: Do not disclose vulnerabilities in a public issue.
