@@ -1,0 +1,54 @@
+name: Compatibility report
+description: Report a compatibility issue with WordPress, PHP, a browser, or a Skin.
+title: "[Compatibility]: "
+labels:
+  - compatibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, private URLs, customer information, or confidential logs. Clearly distinguish parent-theme behavior from Skin or plugin behavior.
+  - type: input
+    id: theme-version
+    attributes:
+      label: Variable Thema version
+    validations:
+      required: true
+  - type: input
+    id: wordpress-version
+    attributes:
+      label: WordPress version
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+  - type: textarea
+    id: related-software
+    attributes:
+      label: Related Skin or plugin
+      description: Provide names and versions. Do not provide private download links or credentials.
+  - type: textarea
+    id: description
+    attributes:
+      label: Compatibility problem
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Parent-only comparison
+      description: Explain whether the issue also occurs with Variable Thema without the Skin or optional plugin.
