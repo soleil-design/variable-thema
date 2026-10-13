@@ -13,13 +13,17 @@ PHP version.
 
 ## Reporting a vulnerability
 
-Do not report a suspected vulnerability in a public GitHub issue, discussion,
-pull request, or social media post.
+Do not report a suspected vulnerability or its details in a public GitHub
+issue, discussion, pull request, or social media post.
 
-While this repository is private, contact the repository maintainers directly.
-Before the repository becomes public, GitHub Private Vulnerability Reporting or
-another private reporting channel will be configured and this section will be
-updated with the exact route.
+Email vulnerability reports to
+[security@soleil-design.com](mailto:security@soleil-design.com). Use a clear
+subject such as “Variable Thema security report” and include only the
+information needed to investigate.
+
+If GitHub Private Vulnerability Reporting is enabled after this repository
+becomes public, it may also be used as a private reporting channel. This email
+address remains the formal security contact.
 
 Include only the information needed to investigate:
 
