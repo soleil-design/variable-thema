@@ -96,7 +96,7 @@ help. Do not disclose security vulnerabilities in a public issue; follow
 
 ## License
 
-Variable Thema is Copyright 2026 Soleil and is distributed under the GNU
+Variable Thema is Copyright 2026 株式会社Soleil and is distributed under the GNU
 General Public License version 2 or later. See [license.txt](license.txt).
 
 Bundled resource licensing and attribution are documented in
