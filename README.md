@@ -1,3 +1,8 @@
+# Variable Thema — WordPress制作の共通フレーム
+
+案件ごとに異なるデザインを制作しながら、共通のテーマ構造を利用できる無料のWordPressテーマです。
+デザインは子テーマ（Skin）で自由に制作。共通部分は親テーマで管理できます。
+
 # Variable Thema
 
 Variable Thema is a free, GPL-licensed classic WordPress theme that provides a
